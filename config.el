@@ -12,10 +12,10 @@
 (setq auto-save-default t
       make-backup-files t)
 
-(add-to-list 'auto-mode-alist '("\\.zsh\\'" . sh-mode))
-(setq shell-file-name (executable-find "zsh"))
-(setq-default vterm-shell (executable-find "zsh"))
-(setq-default explicit-shell-file-name (executable-find "zsh"))
+(add-to-list 'auto-mode-alist '("\\.bash\\'" . sh-mode))
+(setq shell-file-name (executable-find "bash"))
+(setq-default vterm-shell (executable-find "bash"))
+(setq-default explicit-shell-file-name (executable-find "bash"))
 
 (add-hook 'text-mode-hook 'visual-line-mode)
 
@@ -47,7 +47,7 @@
 ;; THEME
 ;; =====================
 
-(setq doom-theme 'adwaita)
+(setq doom-theme 'doom-gruvbox)
 
 (setq doom-font (font-spec :family "AnonymicePro Nerd Font" :size 16))
 
